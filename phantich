@@ -1,0 +1,21 @@
+Phantich - ok
+//khi nao on lai bem thi dat theo tieu chuan bem thoi
+// - khoang cach
+// -- modify
+// __ element con
+// Khi viet code phai phan tich trang web dau tien
+Header(dau_trang)
+Navigation(Dieu_huong) 
+breadcrumb(Chi_dinh)
+sidebar(thanh_ben)
+slider(chay_hinh_anh)-can-tim-hieu
+slider
+content(noi_dung)-truyen-dat-y-chinh
+banner(anh_bia)
+// 1.About
+//2.tour
+//3.contact
+//4.Image
+//5.Footer
+footer
+tim-hieu-ve-cach-viet-css

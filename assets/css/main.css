@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+#main{
+   /* position: relative; */
+    /* tim hieu ki ve display 
+    inline thi se ke thua do dai cua the cha
+    con bliock thi ke thua do dai khoi*/
+}
+.text-white{
+    color: white !important;
+}
+#header{
+  
+    position: fixed;
+    height: 46px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    /* overflow: hidden; */
+    /* li - display:list-style: 
+    dang khoi */
+    /* inline: tren mot hang
+    block: tinh chat khoi se dat duoc kich thuoc */
+}
+#nav {
+display: inline-block;
+width: 100%;
+}
+#nav li{
+  
+    position: relative;
+}
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav > li{
+    display: inline-block;
+}
+/* chi anh huong cap mot thoi . */
+#nav li a{
+    display: block;
+    font-size: 20px;
+    
+    list-style: none;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+
+}
+#nav li:hover .subnav{
+    display: block;
+} 
+#nav .nav_search{
+    font-size: 14px;
+}
+
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+color: #000;
+background-color: #ccc;
+}
+#nav .subnav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0,  0, 0, 0.3);
+    min-width: 160px;
+    list-style-type: none;
+}
+#nav .subnav a{
+    color: black;
+    
+    line-height: 38px;
+    padding: 0 12px;
+}
+#header .header_menu,
+#header .header_search{
+    float: right;
+  
+
+    /* them back vao day vi the nay bao boc the kia */
+    
+}
+#header .header_search,
+#header .header_menu{
+position: absolute;
+top: 0;right: 0;
+}
+#header .header_search:hover{
+    background-color: rgb(238, 44, 44);
+    cursor: pointer;
+}
+#header .header_menu:hover{
+    background-color: #ccc;
+}
+/* du do uy tien */
+#header .header_menu:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
+#header .search-icon{
+    color: white;
+    font-style: 20px;
+    line-height: 46px;
+    padding: 0 15px;
+    
+}
+#slider{
+margin-top: 46px;
+padding-top: 50%;
+/* 50% cua chieu ngang cua the  */
+background: url(../img/du-lich-da-nang-13.jpg) top center / cover no-repeat;
+position: relative;
+/* Duong dan tuong doi co the nhay ra khoi forder */
+}
+.text_slider{
+    position: absolute;
+    bottom: 37px;
+    width: 100%;
+    
+    
+}
+
+.text-heading,
+.text-description{
+color: white;
+text-align: center;
+}
+
+.text-heading{
+font-weight: 500;
+font-size: 24px;
+}
+
+.text-description{
+font-size: 15px;
+font-style: italic;
+padding-top: 25px;
+text-shadow: 0 0 1px #000;
+}
+
+#content{
+
+}
+
+#content .content-section{
+width: 800px;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-top: 64px;
+}
+
+#content .section-heading{
+text-align: center;
+font-weight: 500;
+font-size: 30px;
+letter-spacing: 4px;
+
+}
+
+#content .section-sub{
+text-align: center;
+margin-top: 25px;
+font-size: 15px;
+font-style: italic;
+opacity: 0.6;
+
+
+}
+
+#content .about-section{
+text-align: justify;
+margin-top: 25px;
+font-style: 15px;
+line-height: 1.4;
+}
+/* travel */
+#content .places-list{
+margin-top: 30px;
+}
+#content .place-item{
+text-align: center;
+}
+
+#content .place-name{
+font-size: 15px;
+font-weight: 500;
+margin-top: 18px;
+}
+
+#content .place-img{
+width: 154px;
+height: 154px;
+border-radius: 4px;
+margin-top: 15px;
+}
+
+/* end */
+
+/* tour begin */
+.tour-section{
+    background-color: #000;
+    padding-bottom: 64px;
+    margin-top: 64px;
+}
+#content .tickets-list{
+    margin-top: 38px;
+    background-color: #fff; 
+    list-style: none;   
+
+}
+
+#content .tickets-list li{
+    
+    
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.tickets-list .sold-out{
+background-color: red;
+color: white;
+padding: 3px 4px;
+margin-left: 16px;
+}
+
+.tickets-list .quantity{
+float: right;
+width: 24px;
+height: 24px;
+background-color: #000;
+color: white;
+border-radius: 50%;
+text-align: center;
+line-height: 24px;
+margin-top: -2px;
+
+}
+/* travel ticket */
+#content .travels-list{
+margin-top: 30px;
+}
+
+#content .travel-item{
+
+}
+
+#content .travel-img{
+width: 100%;
+height: 186px;
+display: block;
+}
+#content .travel-img:hover{
+    opacity: 0.6;
+
+}
+
+#content .travel-body{
+background-color: #fff;
+padding: 24px 16px;
+font-size: 15px;
+}
+
+#content .travel-heading{
+display: inline-block;
+font-weight: 500;
+
+}
+
+#content .travel-date{
+opacity: 0.6;
+margin-top: 16px;
+}
+
+#content .travel-description{
+margin-top: 16px;
+line-height: 1.6;
+}
+
+#content .travel-buy-ticket{
+display: inline-block;
+margin-top: 10px;
+background-color: #000;
+padding: 10px 12px;
+color: #fff;
+text-decoration: none;
+border: none;
+cursor: pointer;
+text-align: center;
+}
+#content .travel-buy-ticket:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* common */
+.mt-8{
+    margin-top: 8px;
+}
+
+/* end tour */
+.content-section_contact{
+    margin-top: 48px;
+}
+
+.content-info{
+font-size: 18px;
+line-height: 1.5;
+}
+
+.content-info i[class*='ti-']{
+width: 30px;
+display: inline-block;
+}
+.content-info a{
+    color: #3232e4;
+    opacity: 0.8;
+}
+.content-info a:hover{
+    opacity: 1;
+}
+
+.content-form{
+font-size: 15px;
+}
+
+.content-form .form-input{
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+
+}
+/* contact */
+.content-form .form-send{
+float: right;
+padding: 10px 16px;
+margin-top: 16px;
+background-color: #000;
+color: #fff;
+border: 1px solid #ccc;
+cursor: pointer;
+}
+
+.content-form .form-send:hover{
+    color: #000;
+    background-color: #ccc;
+}
+/* end contact */
+/* Map */
+.map-section{
+    padding: 64px 0;
+}
+.map-section img{
+width: 100%;
+}
+
+#footer{
+text-align: center;
+padding: 0 16px 64px;
+
+}
+.socials-list{
+font-size: 24px;
+}
+
+.socials-list a{
+color: rgba(0,  0, 0, 0.7);
+text-decoration: none;
+
+}
+.copyright a:hover,
+.socials-list a:hover{
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.copyright{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.copyright a{
+    color: rgba(0,  0, 0, 0.7);
+}
+
+/* Modal */
+.modal{
+position: fixed;
+top: 0;right: 0;
+left: 0;bottom: 0;
+background-color: rgba(0,0,0,0.4);
+display: none;
+align-items: center;
+justify-content: center;
+
+}
+.modal.open{
+    display: flex;
+}
+.modal_container{
+background: #fff ;
+width: 900px;
+min-height: 200px;
+position: relative;
+animation: modalFadeIn ease 0.5s;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-100%); 
+        
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal_close{
+position: absolute;
+ top: 0;
+ right: 0;
+ padding: 12px;
+ color:#fff;
+opacity: 0.8;
+ cursor: pointer;
+
+}
+.modal_close:hover{
+    opacity: 1;
+}
+
+.modal_header{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 129px;
+background-color: #009688;
+font-size: 30px;
+color: #fff;
+
+}
+.modal_header--icon{
+    margin-right:  16px;
+}
+
+.modal_body{
+padding: 16px;
+font-size: 15px;
+}
+
+.modal_label{
+display: block;
+margin-bottom: 16px;
+}
+
+.modal_input{
+margin-bottom: 24px;
+width: 100%;
+padding: 10px;
+font-size: 15px;
+border: 1px solid #ccc;
+color: #000;
+
+
+}
+#buy-tickets{
+    width: 100%;
+    font-size: 15px;
+    padding: 18px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.8;
+}
+.modal_footer{
+padding: 16px;
+font-size: 15px;
+text-align: right;
+}
+.modal_footer a{
+    color: #2196F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
